@@ -18,7 +18,7 @@ instance = ec2.Instance("instance",
 
 volume = ebs.Volume("volume",
                     availability_zone=instance.availability_zone,
-                    size=20,
+                    size=40,
                     iops=500,
                     type="gp3",
                     throughput=125
